@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --font-size: 16px;
+  --color-primary: #f6f7fb;
+  --color-secondary: #111;
+  --color-tertiary: #fdc500;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 176, 155, 0.75), rgba(150, 201, 61, 0.88)), url("../../images/bukhara.jpg");
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+.nav__item {
+  font-size: 16px;
+}
+.nav__right-link {
+  font-size: var(--font-size);
+}
+.nav__right-link:not(:last-of-type) {
+  margin-right: 1.5rem;
+}/*# sourceMappingURL=base.css.map */
