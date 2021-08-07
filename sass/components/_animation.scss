@@ -1,0 +1,29 @@
+.animateText {
+  &:hover {
+    animation: animateddText 1s ease-in;
+  }
+
+  @keyframes animateddText {
+    0% {
+      transform: scale(1.1) rotate(360deg);
+    }
+    50% {
+      transform: scale(1.2) rotate(600deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+}
+.animateBtn {
+  &:hover {
+    transition: $animation-timing;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba($background, 0.6);
+
+    &:active {
+      transform: translateY(0) scale(0.98);
+      box-shadow: none;
+    }
+  }
+}

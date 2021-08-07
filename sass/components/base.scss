@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 $font-size: 16px;
-
+$background: #111;
+$animation-timing: 0.3s;
 $gradient: linear-gradient(
   to right bottom,
   rgba(#00b09b, 0.75),
   rgba(#96c93d, 0.88)
 );
+$border-radius: 7px;
 :root {
   --font-size: 16px;
   --color-primary: #f6f7fb;
@@ -34,12 +36,9 @@ ul {
 a {
   text-decoration: none;
 }
-.header {
-  width: 100%;
-  height: 95vh;
-  background-image: $gradient, url("../../images/bukhara.jpg");
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-}
 
+@import "./utils";
+@import "./typography";
+@import "./animation";
+@import "./header";
 @import "./nav";

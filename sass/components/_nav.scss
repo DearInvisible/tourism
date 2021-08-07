@@ -5,16 +5,25 @@
     padding: 2rem;
     background-color: var(--color-secondary);
     color: var(--color-primary);
+    background-color: transparent;
   }
 
   &__item {
     font-size: $font-size;
   }
+
+  .logo {
+    color: var(--color-tertiary) !important;
+   
+  }
+
   &__link {
   }
+
   // * Future drawer
   &__right-list {
   }
+
   &__right-link {
     &:not(:last-of-type) {
       margin-right: 1.5rem;

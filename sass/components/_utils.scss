@@ -1,0 +1,31 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border: 0;
+  outline: none;
+  border-radius: $border-radius;
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  cursor: pointer;
+  
+}
+
+.mt-sm {
+  margin-top: 1rem;
+}
+.mt-md {
+  margin-top: 2.5rem;
+}
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-md {
+  margin-bottom: 2.5rem;
+}
